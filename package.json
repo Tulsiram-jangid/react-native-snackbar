@@ -1,6 +1,6 @@
 {
   "name": "@tulsiramjangid/react-native-snackbar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Animated snackbar component using Context API for React Native",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,5 +23,9 @@
     "react"
   ],
   "author": "Tulsiram Jangid",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "github",
+    "url": "git+https://github.com/Tulsiram-jangid/react-native-snackbar.git"
+  }
 }

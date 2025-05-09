@@ -4,7 +4,7 @@ A lightweight, animated snackbar component for React Native using the Context AP
 
 ## 🎥 Demo
 
-![Snackbar Demo](./docs/snackbar.gif)
+![Snackbar Demo](https://github.com/Tulsiram-jangid/react-native-snackbar/blob/main/docs/snackbar.gif)
 
 ## ✨ Features
 
