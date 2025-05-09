@@ -23,14 +23,18 @@ Using **npm**:
 
 ```bash
 npm install @tulsiramjangid/react-native-snackbar
+```
 
 Using **yarn**:
 
 ```bash
 yarn add @tulsiramjangid/react-native-snackbar
+```
 
 
 ## How to use this
+
+```bash
 
 import React from 'react';
 import { View, Text, Button } from 'react-native';
@@ -56,6 +60,8 @@ const MainScreen = () => {
 };
 
 export default App;
+
+```
 
 
 
