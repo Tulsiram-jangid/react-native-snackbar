@@ -1,0 +1,27 @@
+{
+  "name": "@tulsiramjangid/react-native-snackbar",
+  "version": "1.0.0",
+  "description": "Animated snackbar component using Context API for React Native",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-native": ">=0.70.0"
+  },
+  "keywords": [
+    "react-native",
+    "snackbar",
+    "toast",
+    "animated",
+    "context",
+    "react"
+  ],
+  "author": "Tulsiram Jangid",
+  "license": "MIT"
+}
