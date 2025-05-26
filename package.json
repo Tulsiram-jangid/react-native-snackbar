@@ -1,11 +1,13 @@
 {
   "name": "@tulsiramjangid/react-native-snackbar",
-  "version": "1.0.1",
+  "version": "4.0.0",
   "description": "Animated snackbar component using Context API for React Native",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "publish": "npm publish --access public",
+    "alpha": "npm version prerelease --preid=alpha"
   },
   "devDependencies": {
     "typescript": "^5.8.3"

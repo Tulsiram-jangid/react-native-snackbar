@@ -5,7 +5,7 @@ import React, {
     useRef,
     ReactNode,
   } from 'react';
-  import { Animated } from 'react-native';
+  import { Animated, TextStyle } from 'react-native';
   
   // Define the type for the context value
   interface SnackbarContextType {
@@ -37,10 +37,14 @@ import React, {
     const [message, setMessage] = useState<string>('');
     const [visible, setVisible] = useState<boolean>(false);
     const animation = useRef(new Animated.Value(0)).current;
+    const textStyle = useRef(null);
   
-    const showSnackbar = (msg: string, duration = 3000) => {
+    const showSnackbar = (msg: string, duration = 3000, _textStyle?: TextStyle) => {
       setMessage(msg);
       setVisible(true);
+      if(_textStyle){
+        textStyle.current = _textStyle;
+      }
   
       Animated.timing(animation, {
         toValue: 1,
@@ -84,7 +88,7 @@ import React, {
               opacity: animation,
             }}
           >
-            <Animated.Text style={{ color: '#fff' }}>{message}</Animated.Text>
+            <Animated.Text style={[{ color: '#fff' }, textStyle?.current && {...textStyle?.current}]}>{message}</Animated.Text>
           </Animated.View>
         )}
       </SnackbarContext.Provider>
